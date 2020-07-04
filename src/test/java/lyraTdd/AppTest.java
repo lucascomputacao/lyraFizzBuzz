@@ -69,7 +69,7 @@ public class AppTest {
 
         // WHEN - ACTION
         for (int i = 1; i <= ten; i++) {
-            result.append(app.fizzBuzz(i)).append(putBlankSpaceOnStringIfNecessary(ten, i));
+            result.append(app.fizzBuzz(i)).append(putBreakLineOnStringIfNecessary(ten, i));
         }
 
         // THEN - ASSERTION
@@ -85,14 +85,14 @@ public class AppTest {
 
         // WHEN - ACTION
         for (int i = 1; i <= fifteen; i++) {
-            result.append(app.fizzBuzz(i)).append(putBlankSpaceOnStringIfNecessary(fifteen, i));
+            result.append(app.fizzBuzz(i)).append(putBreakLineOnStringIfNecessary(fifteen, i));
         }
 
         // THEN - ASSERTION
         assertEquals(result.toString(), "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz");
     }
 
-    private String putBlankSpaceOnStringIfNecessary(int limit, int i) {
+    private String putBreakLineOnStringIfNecessary(int limit, int i) {
         if (i < limit) {
           return "\n";
         }
