@@ -5,9 +5,6 @@ package lyraTdd;
 
 public class App {
 
-    public static void main(String[] args) {
-    }
-
     public String fizzBuzz(int n) {
         if (n % 3 == 0 && n % 5 == 0) {
             return "FizzBuzz";
