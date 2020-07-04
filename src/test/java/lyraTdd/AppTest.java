@@ -92,8 +92,8 @@ public class AppTest {
         assertEquals(result.toString(), "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz");
     }
 
-    private String putBreakLineOnStringIfNecessary(int limit, int i) {
-        if (i < limit) {
+    private String putBreakLineOnStringIfNecessary(int limit, int currentIndex) {
+        if (currentIndex < limit) {
           return "\n";
         }
         return "";
